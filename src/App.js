@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import SearchBar from './SearchBar';
 import './App.css';
+import './CategoryPanel.css';
 
-function App() {
+const CategoryPanel = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="category-panel">
+      <div className="category-item">Category 1</div>
+      <div className="category-item">Category 2</div>
+      <div className="category-item">Category 3</div>
+      <div className="category-item">Category 4</div>
+      <div className="category-item">Category 5</div>
     </div>
   );
-}
+};
+
+const App = () => {
+  return (
+    <div className="App">
+      <CategoryPanel />
+      <h1>My Search App</h1>
+      <SearchBar />
+    </div>
+  );
+};
 
 export default App;
