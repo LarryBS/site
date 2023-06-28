@@ -18,3 +18,53 @@ body {
   width: 200px; /* Установите желаемую ширину логотипа */
   height: auto;
 }
+.logo-image {
+  background-color: transparent;
+  width: 300px; /* Установите желаемую ширину */
+  height: auto; /* Размер будет автоматически масштабироваться пропорционально */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 70vh;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex-grow: 1; /* Добавлено свойство flex-grow для автоматического расширения */
+  max-width: 400px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
