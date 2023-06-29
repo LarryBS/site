@@ -1,5 +1,5 @@
 body {
-  background-image: url('E:\project\site\search-website\foto\2.jpeg'); /* Замените 'path/to/your/image.jpg' путем к вашей фотографии */
+  background-image: url('../images/2.jpeg'); /* Замените 'path/to/your/image.jpg' путем к вашей фотографии */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

@@ -6,10 +6,10 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <div className="google-logo">
+        <div className="hubibuy-logo">
           <img
             src={require('./logo.png')}
-            alt="Google"
+            alt="hubibuy"
             className="logo-image"
           />
         </div>

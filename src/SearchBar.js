@@ -41,9 +41,11 @@ const SearchBar = () => {
     }
 
     if (selectedSite === 'amazon') {
-      window.location.href = `https://www.amazon.com/s?k=${searchQuery}`;
+      const affiliateLink = `https://www.amazon.com/s?k=${searchQuery}&tag=finditfastdea-20`;
+      window.open(affiliateLink, '_blank');
     } else if (selectedSite === 'aliexpress') {
-      window.location.href = `https://www.aliexpress.com/wholesale?SearchText=${searchQuery}`;
+      const affiliateLink = `https://www.aliexpress.com/wholesale?SearchText=${searchQuery}&aff_platform=link-c-tool&sk=finditfastdea-20`;
+      window.open(affiliateLink, '_blank');
     }
 
     // Добавьте здесь логику для обработки отправки запроса на сервер или выполнения других действий с поисковым запросом и выбранными параметрами
