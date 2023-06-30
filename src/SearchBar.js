@@ -62,16 +62,15 @@ const SearchBar = () => {
       />
       <div className="site-filter">
         <select value={selectedSite} onChange={handleSiteSelection} className="site-dropdown">
-          <option value="">Select a site</option>
+        <option value="amazon">Amazon</option>
           <option value="aliexpress">AliExpress</option>
-          <option value="amazon">Amazon</option>
           {/* Добавьте здесь другие опции для сайтов */}
         </select>
       </div>
       <div className="country-filter">
         <select value={selectedCountry} onChange={handleCountrySelection} className="country-dropdown">
           <option value="">Select a country</option>
-          <option value="usa">USA</option>
+          <option value="Israel">Israel</option>
           <option value="china">China</option>
           <option value="uk">UK</option>
           {/* Добавьте здесь другие опции для стран */}
