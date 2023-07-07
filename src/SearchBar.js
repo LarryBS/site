@@ -53,31 +53,31 @@ const SearchBar = () => {
 
   return (
     <form onSubmit={handleSubmit} className="search-form">
-      <input
-        type="text"
+      <div className='field-group'><input type="text"
         placeholder="Search..."
         value={searchTerm}
         onChange={handleSearch}
-        className="search-input"
-      />
-      <div className="site-filter">
+        className="search-input" />
+      </div>
+      <div className='field-group'>
         <select value={selectedSite} onChange={handleSiteSelection} className="site-dropdown">
-        <option value="amazon">Amazon</option>
+          <option value="amazon">Amazon</option>
           <option value="aliexpress">AliExpress</option>
-          {/* Добавьте здесь другие опции для сайтов */}
         </select>
       </div>
-      <div className="country-filter">
+      <div className='field-group'>
         <select value={selectedCountry} onChange={handleCountrySelection} className="country-dropdown">
           <option value="">Select a country</option>
           <option value="Israel">Israel</option>
           <option value="china">China</option>
           <option value="uk">UK</option>
-          {/* Добавьте здесь другие опции для стран */}
         </select>
       </div>
-      <div className="max-price-filter">
-        <select value={maxPrice} onChange={handleMaxPriceChange} className="max-price-dropdown">
+      <div className='field-group'>
+        <button type="submit" className="search-button">
+          Search
+        </button>
+        <select value={maxPrice} onChange={handleMaxPriceChange} className="price">
           <option value="">Max Price</option>
           <option value="50">$50</option>
           <option value="100">$100</option>
@@ -85,10 +85,7 @@ const SearchBar = () => {
           <option value="200">$200</option>
         </select>
       </div>
-      <button type="submit" className="search-button">
-        Search
-      </button>
-    </form>
+    </form >
   );
 };
 
